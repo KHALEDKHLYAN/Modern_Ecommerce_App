@@ -7,4 +7,11 @@ class TImages{
   //Social Logos
   static const String facebook = "assets/logos/facebook.png";
   static const String google = "assets/logos/google-logo.png";
+
+  //OnBoarding Screen Images
+  static const String onBoardingImage1 = "assets/images/on_boarding_images/analytics-interface.gif";
+  static const String onBoardingImage2 = "assets/images/on_boarding_images/currency-analytics.gif";
+  static const String onBoardingImage3 = "assets/images/on_boarding_images/isometric.gif";
+
+
 }

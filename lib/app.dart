@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:moderne_app/features/authentication/screens/onboarding.dart';
 import 'package:moderne_app/util/theme/theme.dart';
 
 class App extends StatelessWidget {
@@ -10,6 +11,7 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
+      home: OnBoardingScreen(),
     );
   }
 }
