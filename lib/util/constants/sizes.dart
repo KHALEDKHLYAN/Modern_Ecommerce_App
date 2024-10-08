@@ -1,5 +1,4 @@
-class TSIzes {
-  TSIzes._();
+class TSizes {
 
   //padding and margin sizes
   static const double xs = 4.0;
