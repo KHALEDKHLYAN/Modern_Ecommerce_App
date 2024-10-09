@@ -23,22 +23,16 @@ class LoginScreen extends StatelessWidget {
             child: Column(
               children: [
                 //Logo, Title & Sub -Title
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    //Logo, Title, & SubTitle
-                    LoginHeader(dark: dark),
-
-                    //LoginForm
-                    LoginForm(),
-
-                    //Divider
-                    FormDivider(dark: dark, dividerText: TTexts.orSignInWIth.capitalize!,),
-                    SizedBox(height: TSizes.spaceBtwnScetions),
-                    //Footer
-                    SocialButtons(),
-                  ],
-                ),
+                LoginHeader(dark: dark),
+                
+                //LoginForm
+                LoginForm(),
+                
+                //Divider
+                FormDivider(dark: dark, dividerText: TTexts.orSignInWIth.capitalize!,),
+                SizedBox(height: TSizes.spaceBtwnScetions),
+                //Footer
+                SocialButtons(),
               ],
             )),
       ),

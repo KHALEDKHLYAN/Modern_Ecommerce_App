@@ -1,5 +1,8 @@
+
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:moderne_app/features/authentication/screens/signup.widgets/signup.dart';
 import 'package:moderne_app/util/constants/sizes.dart';
 import 'package:moderne_app/util/constants/text_strings.dart';
 
@@ -36,11 +39,13 @@ class LoginForm extends StatelessWidget {
             children: [
               ///Remember me
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Checkbox(value: true, onChanged: (value) {}),
                   Text(TTexts.remeberMe)
                 ],
               ),
+              SizedBox(width: TSizes.spaceBtwnItems),
 
               ///Forget Password
               TextButton(onPressed: () {}, child: Text(TTexts.forgetpassword)),
@@ -62,7 +67,7 @@ class LoginForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: OutlinedButton(
-              onPressed: () {},
+              onPressed: () => Get.to(()=> SignupScreen()),
               child: Text(TTexts.createAccount),
             ),
           ),

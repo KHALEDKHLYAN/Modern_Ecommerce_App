@@ -1,4 +1,3 @@
-
 import "package:flutter/material.dart";
 import 'package:moderne_app/util/constants/sizes.dart';
 
