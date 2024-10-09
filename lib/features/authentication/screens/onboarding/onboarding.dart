@@ -3,10 +3,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:moderne_app/features/authentication/controllers/onboarding_controller.dart';
-import 'package:moderne_app/features/authentication/screens/widgets/onboarding_next_button.dart';
-import 'package:moderne_app/features/authentication/screens/widgets/onboarding_page.dart';
-import 'package:moderne_app/features/authentication/screens/widgets/onboarding_skip.dart';
-import 'package:moderne_app/features/authentication/screens/widgets/onbording_dot_navigation.dart';
+import 'package:moderne_app/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
+import 'package:moderne_app/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
+import 'package:moderne_app/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
+import 'package:moderne_app/features/authentication/screens/onboarding/widgets/onbording_dot_navigation.dart';
 import 'package:moderne_app/util/constants/image_strings.dart';
 import 'package:moderne_app/util/constants/text_strings.dart';
 
