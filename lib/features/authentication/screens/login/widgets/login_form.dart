@@ -2,7 +2,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:moderne_app/features/authentication/screens/password_configurations/forget_password.dart';
 import 'package:moderne_app/features/authentication/screens/signup.widgets/signup.dart';
+import 'package:moderne_app/navigatinon_menu.dart';
 import 'package:moderne_app/util/constants/sizes.dart';
 import 'package:moderne_app/util/constants/text_strings.dart';
 
@@ -48,7 +50,7 @@ class LoginForm extends StatelessWidget {
               SizedBox(width: TSizes.spaceBtwnItems),
 
               ///Forget Password
-              TextButton(onPressed: () {}, child: Text(TTexts.forgetpassword)),
+              TextButton(onPressed: () =>Get.to(()=>ForgetPassword()), child: Text(TTexts.forgetpassword)),
             ],
           ),
           SizedBox(height: TSizes.spaceBtwnScetions),
@@ -57,7 +59,7 @@ class LoginForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () =>Get.to(()=>NavigatinonMenu()),
               child: Text(TTexts.signin),
             ),
           ),

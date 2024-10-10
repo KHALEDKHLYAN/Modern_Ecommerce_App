@@ -53,9 +53,9 @@ class TTexts {
   static const String orSignUpWIth = "or   Signup with";
   static const String iAgreeTo = "I AgreeTo";
   static const String and = "and";
+  static const String done = "Done";
   static const String continueText = "Continue";
-
-
+  static const String submit = "Submit";
   static const String privacyPolicy = "Privacy Policy";
   static const String termsAndCondition = "Terms and Conditions";
   static const String verificationCode = "verificationCode";
