@@ -26,7 +26,7 @@ class TTexts {
   static const String changeYourPasswordTitle = "Password Reset Email Sent";
   static const String changeYourPasswordSubTitle =
       "Your Account Security is  our Priority! we've Sent You  a Password Reset Email, Please Check Your Email and Follow the Instructions to Reset Your Password";
-  static const String confirmEmail = "Verify Your Email";
+  static const String confirmEmail = "Verify Your Email address!";
   static const String confirmEmailSubTitle =
       "Congratulations! Your Accoun Awaits: verify your Email to start shopping and Experience a worldof unrivaled and personalized offers.";
   static const String emailNotReceivedMessage =
@@ -53,6 +53,8 @@ class TTexts {
   static const String orSignUpWIth = "or   Signup with";
   static const String iAgreeTo = "I AgreeTo";
   static const String and = "and";
+  static const String continueText = "Continue";
+
 
   static const String privacyPolicy = "Privacy Policy";
   static const String termsAndCondition = "Terms and Conditions";
