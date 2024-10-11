@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:moderne_app/screens/home/home.dart';
+import 'package:moderne_app/features/shop/screens/home/home_screen.dart';
 import 'package:moderne_app/util/constants/colors.dart';
 import 'package:moderne_app/util/helpers/helper_functions.dart';
 
