@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:moderne_app/common/widgets/custom_shapes/primary_header_container.dart';
 import 'package:moderne_app/common/widgets/custom_shapes/search_container.dart';
-import 'package:moderne_app/common/widgets/image_text_widgets/vertical_image_text.dart';
 import 'package:moderne_app/common/widgets/texts/section_heading.dart';
 import 'package:moderne_app/features/shop/screens/home/widgets/home_appbar.dart';
-import 'package:moderne_app/util/constants/image_strings.dart';
+import 'package:moderne_app/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:moderne_app/util/constants/sizes.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -39,20 +38,7 @@ class HomeScreen extends StatelessWidget {
                     ),
                     SizedBox(height: TSizes.spaceBtwnItems),
                     //ScrolableCategories
-                    SizedBox(
-                      height: 80,
-                      child: ListView.builder(
-                          shrinkWrap: true,
-                          itemCount: 6,
-                          scrollDirection: Axis.horizontal,
-                          itemBuilder: (_, index) {
-                            return VerticalImageText(
-                              image: TImages.shoeIcon,
-                              title: 'Shoes',
-                              onTap: () {},
-                            );
-                          }),
-                    )
+                    Homecategories()
                   ],
                 ),
               )

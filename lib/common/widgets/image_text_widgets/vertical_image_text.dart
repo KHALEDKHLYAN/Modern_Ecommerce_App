@@ -26,16 +26,15 @@ class VerticalImageText extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.only(right: TSizes.spaceBtwnItems),
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             Container(
               width: 56,
               height: 56,
               padding: EdgeInsets.all(TSizes.sm),
               decoration: BoxDecoration(
-                color: backgroundColor ??
-                    (dark
-                        ? TColors.black
-                        : TColors.white),
+                color:
+                    backgroundColor ?? (dark ? TColors.black : TColors.white),
                 borderRadius: BorderRadius.circular(100),
               ),
               child: Center(
@@ -44,15 +43,13 @@ class VerticalImageText extends StatelessWidget {
                   image,
                 ),
                 fit: BoxFit.cover,
-                color: dark
-                    ? TColors.light
-                    : TColors.dark,
+                color: dark ? TColors.light : TColors.dark,
               )),
             ),
             //Text
             SizedBox(height: TSizes.spaceBtwnItems / 2),
             SizedBox(
-              height: 55,
+              height: 75,
               child: Text(
                 title,
                 style: Theme.of(context)
@@ -61,6 +58,7 @@ class VerticalImageText extends StatelessWidget {
                     .apply(color: textColor),
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
+                textAlign: TextAlign.center,
               ),
             )
           ],
