@@ -17,6 +17,21 @@ class TImages{
   static  const String animation1 = "assets/images/animations/happyswing.png";
   static const String animation2 = "assets/images/animations/receiveseail.png";
 
+  //---Category Icons
+  static const String sportIcon = "assets/icons/categories/icons8-bowling-100.png";
+  static const String clothIcon = "assets/icons/categories/icons8-dummy-100.png";
+  static const String shoeIcon = "assets/icons/categories/icons8-shoes-100.png";
+  static const String cosmeticIcon = "assets/icons/categories/icons8-cosmetic-100.png";
+  static const String animalIcon = "assets/icons/categories/icons8-dog-heart-64.png";
+  static const String toyIcon = "assets/icons/categories/icons8-toy-car-100.png";
+  static const String furnitureIcon = "assets/icons/categories/icons8-dining-chair-64.png";
+  static const String jeweleryIcon = "assets/icons/categories/icons8-sparkling-diamond-100.png";
+  static const String elctronicsIcon = "assets/icons/categories/icons8-windows-phone-96.png";
+
+
+
+
+
 
 
 }
