@@ -27,6 +27,7 @@ class VerticalImageText extends StatelessWidget {
         padding: EdgeInsets.only(right: TSizes.spaceBtwnItems),
         child: Column(
           mainAxisSize: MainAxisSize.min,
+          
           children: [
             Container(
               width: 56,
@@ -48,8 +49,7 @@ class VerticalImageText extends StatelessWidget {
             ),
             //Text
             SizedBox(height: TSizes.spaceBtwnItems / 2),
-            SizedBox(
-              height: 75,
+            Expanded(
               child: Text(
                 title,
                 style: Theme.of(context)

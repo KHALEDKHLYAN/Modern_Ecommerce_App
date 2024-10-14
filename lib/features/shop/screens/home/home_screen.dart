@@ -4,6 +4,8 @@ import 'package:moderne_app/common/widgets/custom_shapes/search_container.dart';
 import 'package:moderne_app/common/widgets/texts/section_heading.dart';
 import 'package:moderne_app/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:moderne_app/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:moderne_app/features/shop/screens/home/widgets/promo_slider.dart';
+import 'package:moderne_app/util/constants/image_strings.dart';
 import 'package:moderne_app/util/constants/sizes.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -13,40 +15,44 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-          child: Column(children: [
-        //Header
-        PrimaryHeaderContainer(
-          child: Column(
-            children: [
-              //AppBar
-              HomeAppBar(),
-              SizedBox(height: TSizes.spaceBtwnScetions),
-              //Searchbar
-              SearchContainer(
-                text: 'Search in store',
-              ),
-              //Categories
-              Padding(
-                padding: EdgeInsets.only(left: TSizes.defaultSpacing),
-                child: Column(
-                  children: [
-                    //Headings
-                    SectionHeading(
-                      title: 'Popular Categories',
-                      showActionUBtton: false,
-                      textColor: Colors.white,
+        child: Column(
+          children: [
+            //Header
+            PrimaryHeaderContainer(
+              child: Column(
+                children: [
+                  //AppBar
+                  HomeAppBar(),
+                  SizedBox(height: TSizes.spaceBtwnScetions),
+                  //Searchbar
+                  SearchContainer(
+                    text: 'Search in store',
+                  ),
+                  //Categories
+                  Padding(
+                    padding: EdgeInsets.only(left: TSizes.defaultSpacing),
+                    child: Column(
+                      children: [
+                        //Headings
+                        SectionHeading(
+                          title: 'Popular Categories',
+                          showActionUBtton: false,
+                          textColor: Colors.white,
+                        ),
+                        SizedBox(height: TSizes.spaceBtwnItems),
+                        //ScrolableCategories
+                        Homecategories()
+                      ],
                     ),
-                    SizedBox(height: TSizes.spaceBtwnItems),
-                    //ScrolableCategories
-                    Homecategories()
-                  ],
-                ),
-              )
-            ],
-          ),
+                  )
+                ],
+              ),
+            ),
+            //---Boddy
+            PromoSlider(banners: [TImages.promoBanner1,TImages.promoBanner2,TImages.promoBanner4,],),
+          ],
         ),
-      ])),
+      ),
     );
   }
 }
-

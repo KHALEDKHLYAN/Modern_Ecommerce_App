@@ -10,7 +10,7 @@ class Homecategories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 80,
+      height: 85,
       child: ListView.builder(
           shrinkWrap: true,
           itemCount: 6,
